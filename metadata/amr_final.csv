@@ -1,0 +1,64 @@
+﻿Sample_id,Country,Regions,pbp1a,gyrA,23SrRNA,     frxA,pbp3,rdxA
+CHN_001,China,East Asia,0,1,0,0,0,0
+CHN_002,China,East Asia,0,1,0,0,0,0
+CHN_003,China,East Asia,1,0,0,1,1,0
+CHN_004,China,East Asia,1,0,0,0,1,0
+CHN_005,China,East Asia,0,1,0,0,0,0
+CHN_006,China,East Asia,1,0,0,0,0,0
+CHN_007,China,East Asia,0,0,0,0,0,0
+JPN_001,Japan,East Asia,0,0,0,0,0,1
+JPN_002,Japan,East Asia,0,0,0,1,0,0
+JPN_003,Japan,East Asia,0,0,0,1,0,0
+JPN_004,Japan,East Asia,0,0,0,0,0,0
+JPN_005,Japan,East Asia,0,0,0,0,0,0
+JPN_006,Japan,East Asia,0,0,0,0,0,1
+JPN_007,Japan,East Asia,1,0,0,0,0,0
+SKR_001,South Korea,East Asia,1,0,1,0,0,0
+SKR_002,South Korea,East Asia,0,0,0,0,0,0
+SKR_003,South Korea,East Asia,0,0,0,0,1,1
+SKR_004,South Korea,East Asia,1,1,0,0,0,0
+SKR_005,South Korea,East Asia,0,1,1,0,1,0
+SKR_006,South Korea,East Asia,1,1,1,0,1,0
+SKR_007,South Korea,East Asia,0,1,1,0,1,0
+SAF_001,South Africa,Africa,0,0,0,0,0,0
+SAF_002,South Africa,Africa,0,0,0,0,0,1
+SAF_003,South Africa,Africa,1,0,0,0,0,0
+SAF_004,South Africa,Africa,0,0,0,1,0,0
+SAF_005,South Africa,Africa,1,0,0,0,0,0
+SAF_006,South Africa,Africa,1,0,0,0,0,0
+SAF_007,South Africa,Africa,1,0,0,0,0,0
+CNG_001,Congo,Africa,0,0,1,0,0,1
+CNG_002,Congo,Africa,0,0,0,0,0,0
+CNG_003,Congo,Africa,0,0,0,0,0,0
+CNG_004,Congo,Africa,1,0,0,0,0,0
+CNG_005,Congo,Africa,0,0,1,0,0,1
+CNG_006,Congo,Africa,0,1,0,0,0,0
+CNG_007,Congo,Africa,0,0,0,0,0,0
+ALG_001,Algeria,Africa,1,0,1,1,0,1
+ALG_002,Algeria,Africa,1,0,0,1,0,1
+ALG_003,Algeria,Africa,0,0,0,1,0,1
+ALG_004,Algeria,Africa,1,0,0,0,0,0
+ALG_005,Algeria,Africa,1,0,0,1,1,1
+ALG_006,Algeria,Africa,1,0,1,0,1,0
+ALG_007,Algeria,Africa,1,0,0,0,1,1
+SPN_001,Spain,Europe,1,0,1,0,0,1
+SPN_002,Spain,Europe,1,0,0,1,0,1
+SPN_003,Spain,Europe,0,0,1,0,1,0
+SPN_004,Spain,Europe,1,1,0,0,0,1
+SPN_005,Spain,Europe,1,0,0,1,0,0
+SPN_006,Spain,Europe,0,0,0,1,0,1
+SPN_007,Spain,Europe,1,0,0,0,0,1
+GRM_001,Germany,Europe,1,0,1,1,0,1
+GRM_002,Germany,Europe,1,0,1,1,0,1
+GRM_003,Germany,Europe,0,1,0,0,0,0
+GRM_004,Germany,Europe,0,0,0,1,0,1
+GRM_005,Germany,Europe,0,0,0,0,0,0
+GRM_006,Germany,Europe,0,0,0,0,0,0
+GRM_007,Germany,Europe,1,0,0,1,0,1
+ITL_001,Italy,Europe,0,1,0,1,0,0
+ITL_002,Italy,Europe,1,0,0,0,0,0
+ITL_003,Italy,Europe,0,0,0,0,0,1
+ITL_004,Italy,Europe,1,1,0,1,0,1
+ITL_005,Italy,Europe,0,0,0,0,0,1
+ITL_006,Italy,Europe,0,0,0,0,0,0
+ITL_007,Italy,Europe,0,0,0,1,1,0

@@ -1,0 +1,65 @@
+GenBank acc	Accession	Sample_id	Strain	Host	Assembly_level	Country
+GCA_020906585.1	NZ_CP086760.1	CHN_001	3192	Homo sapiens	Complete Genome	China
+GCA_003855475.1	NZ_CP034071.1	CHN_002	Hpbs1	Homo sapiens	Complete Genome	China
+GCA_031670015.1	 NZ_CP134397.1	CHN_003	ICDC15003s	Homo sapiens	Complete Genome	China
+GCA_031666935.1	NZ_CP134395.1	CHN_004	ICDC15003-8-2	Homo sapiens	Complete Genome	China
+GCA_022925835.1	NZ_CP094167.1	CHN_005	Hpfe0007	Homo sapiens	Complete Genome	China
+GCA_022921295.1	NZ_CP094061.1	CHN_006	Hpfe120	Homo sapiens	Complete Genome	China
+GCA_022923915.1	NZ_CP094128.1	CHN_007	Hpfe055	Homo sapiens	Complete Genome	China
+GCA_035089835.1	CP078820.1	JPN_001	HpGP-JAP-115	Homo sapiens	Complete Genome	Japan
+GCA_035091325.1	CP078826.1	JPN_002	HpGP-JAP-109	Homo sapiens	Complete Genome	Japan
+GCA_035155765.2	CP078834.1	JPN_003	HpGP-JAP-101	Homo sapiens	Complete Genome	Japan
+GCA_035183305.1	 CP079469.1	JPN_004	HpGP-JAP-021	Homo sapiens	Complete Genome	Japan
+GCA_035183425.1	CP079475.1	JPN_005	HpGP-JAP-012	Homo sapiens	Complete Genome	Japan
+GCA_035183485.1	CP079478.1	JPN_006	HpGP-JAP-002	Homo sapiens	Complete Genome	Japan
+GCA_035092165.1	CP078830.1	JPN_007	HpGP-JAP-105	Homo sapiens	Complete Genome	Japan
+GCA_003957395.1	NZ_CP025474.1	SKR_001	H-137	Homo sapiens	Complete Genome	South Korea
+GCA_034498215.1	NZ_CP140484.1	SKR_002	52N	Homo sapiens	Complete Genome	South Korea
+GCA_034498235.1	 NZ_CP140483.1	SKR_003	51N	Homo sapiens	Complete Genome	South Korea
+GCA_035067605.1	 CP078792.1	SKR_004	HpGP-KOR-021	Homo sapiens	Complete Genome	South Korea
+GCA_035621295.1	NZ_CP141773.1	SKR_005	P08205	Homo sapiens	Complete Genome	South Korea
+GCA_035621315.1	NZ_CP141774.1	SKR_006	P07353	Homo sapiens	Complete Genome	South Korea
+GCA_035621875.1	NZ_CP141838.1	SKR_007	P07928	Homo sapiens	Complete Genome	South Korea
+GCA_034819585.1	CP078259.1	SAF_001	HpGP-ZAF-011	Homo sapiens	Complete Genome	South Africa
+GCA_034820485.1	CP078165.1	SAF_002	HpGP-ZAF-010	Homo sapiens	Complete Genome	South Africa
+GCA_034827045.1	CP078172.1	SAF_003	HpGP-ZAF-001	Homo sapiens	Complete Genome	South Africa
+GCA_034825105.1	CP078170.1	SAF_004	HpGP-ZAF-004	Homo sapiens	Complete Genome	South Africa
+GCA_034825975.1	CP078171.1	SAF_005	HpGP-ZAF-002	Homo sapiens	Complete Genome	South Africa
+GCA_034822625.1	CP078167.1	SAF_006	HpGP-ZAF-008	Homo sapiens	Complete Genome	South Africa
+GCA_034823385.1	CP078168.1	SAF_007	HpGP-ZAF-007	Homo sapiens	Complete Genome	South Africa
+GCA_034705995.1	CP078992.1	CNG_001	HpGP-COG-002	Homo sapiens	Complete Genome	Congo
+GCA_034706935.1	CP078993.1	CNG_002	HpGP-COG-001	Homo sapiens	Complete Genome	Congo
+GCA_034858055.1	CP078983.1	CNG_003	HpGP-COG-011	Homo sapiens	Complete Genome	Congo
+GCA_034858075.1	CP078984.1	CNG_004	HpGP-COG-010	Homo sapiens	Complete Genome	Congo
+GCA_034858095.1	CP078985.1	CNG_005	HpGP-COG-009	Homo sapiens	Complete Genome	Congo
+GCA_034858115.1	CP078986.1	CNG_006	HpGP-COG-008	Homo sapiens	Complete Genome	Congo
+GCA_034858135.1	CP078987.1	CNG_007	HpGP-COG-007	Homo sapiens	Complete Genome	Congo
+GCA_034688185.1	CP079078.1	ALG_001	HpGP-ALG-010	Homo sapiens	Complete Genome	Algeria
+GCA_034689205.1	CP079079.1	ALG_002	HpGP-ALG-009	Homo sapiens	Complete Genome	Algeria
+GCA_034689985.1	CP079080.1	ALG_003	HpGP-ALG-008	Homo sapiens	Complete Genome	Algeria
+GCA_034690485.1	CP079081.1	ALG_004	HpGP-ALG-007	Homo sapiens	Complete Genome	Algeria
+GCA_034691325.1	CP079082.1	ALG_005	HpGP-ALG-006	Homo sapiens	Complete Genome	Algeria
+GCA_034691625.1	CP079093.1	ALG_006	HpGP-ALG-005	Homo sapiens	Complete Genome	Algeria
+GCA_034691725.1	CP079084.1	ALG_007	HpGP-ALG-003	Homo sapiens	Complete Genome	Algeria
+GCA_034858375.1	CP078287.1	SPN_001	HpGP-SPA-703	Homo sapiens	Complete Genome	Spain
+GCA_034858635.1	CP078300.1	SPN_002	HpGP-SPA-507	Homo sapiens	Complete Genome	Spain
+GCA_034858915.1	CP078314.1	SPN_003	HpGP-SPA-403	Homo sapiens	Complete Genome	Spain
+GCA_034860125.1	CP078342.1	SPN_004	HpGP-SPA-210	Homo sapiens	Complete Genome	Spain
+GCA_034860325.1	CP078352.1	SPN_005	HpGP-SPA-110	Homo sapiens	Complete Genome	Spain
+GCA_034856395.1	CP078274.1	SPN_006	HpGP-SPA-807	Homo sapiens	Complete Genome	Spain
+GCA_034858475.1	CP078292.1	SPN_007	HpGP-SPA-609	Homo sapiens	Complete Genome	Spain
+GCA_006337345.1	NZ_CP032477.1	GRM_001	169-C-EK8	Homo sapiens	Complete Genome	Germany
+GCA_006337625.1	NZ_CP032904.1	GRM_002	169-A-EK5	Homo sapiens	Complete Genome	Germany
+GCA_006337465.1	NZ_CP032902.1	GRM_003	280-A-EK1	Homo sapiens	Complete Genome	Germany
+GCA_006337285.1	NZ_CP032473.1	GRM_004	476-A2-EK2	Homo sapiens	Complete Genome	Germany
+GCA_006338685.1	NZ_CP032471.1	GRM_005	479-C2-EK2	Homo sapiens	Complete Genome	Germany
+GCA_006338945.1	NZ_CP032898.1	GRM_006	479-C-EK2	Homo sapiens	Complete Genome	Germany
+GCA_006337385.1	NZ_CP032479.1	GRM_007	21-F-EK1	Homo sapiens	Complete Genome	Germany
+GCA_035183505.1	CP079479.1	ITL_001	HpGP-ITA-030	Homo sapiens	Complete Genome	Italy
+GCA_035183585.1	CP079484.1	ITL_002	HpGP-ITA-025	Homo sapiens	Complete Genome	Italy
+GCA_035183685.1	CP079488.1	ITL_003	HpGP-ITA-020	Homo sapiens	Complete Genome	Italy
+GCA_035183785.1	CP079493.1	ITL_004	HpGP-ITA-015	Homo sapiens	Complete Genome	Italy
+GCA_035183965.1	CP079498.1	ITL_005	HpGP-ITA-010	Homo sapiens	Complete Genome	Italy
+GCA_035184145.1	CP079507.1	ITL_006	HpGP-ITA-001	Homo sapiens	Complete Genome	Italy
+GCA_035184065.1	CP079503.1	ITL_007	HpGP-ITA-005	Homo sapiens	Complete Genome	Italy
+GCA_000009305.1	AM260522.1	OUT	Sheeba	H. acinonychis	Complete Genome	NA
