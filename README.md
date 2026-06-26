@@ -11,7 +11,7 @@ This project performs comparative genomics analysis of 63 *Helicobacter pylori* 
 **Pipeline summary:**
 - Genome annotation: Prokka
 - Pangenome analysis: Panaroo
-- Phylogenetic reconstruction: IQ-TREE2
+- Phylogenetic reconstruction: IQ-TREE
 - AMR detection: AMRFinderPlus + RGI/CARD
 - Virulence factor detection: ABRicate/VFDB
 - Visualization: R (ggtree, gheatmap)
@@ -26,17 +26,6 @@ datasets download genome accession --inputfile accession.txt --include genome --
 
 Strains were renamed according to [rename.txt](Genome/rename.txt):
 
-```bash
-while IFS=$'\t' read -r accession newname; do
-    match=$(ls Genome/ | grep "^${accession}")
-    if [ -n "$match" ]; then
-        mv "Genome/$match" "Genome/${newname}.fna"
-        echo "Renamed: $match → ${newname}.fna"
-    else
-        echo "WARNING: No match found for $accession"
-    fi
-done < Genome/rename.txt
-```
 
 Quality check was performed using SeqKit:
 
@@ -170,7 +159,7 @@ R scripts: [Visualization/scripts/](Visualization/scripts/)
 | SeqKit | 2.3.0 |
 | Prokka | 1.12 |
 | Panaroo | 1.7.0 |
-| IQ-TREE2 | 3.1.2 |
+| IQ-TREE | 3.1.2 |
 | AMRFinderPlus | 4.2.7 |
 | RGI | 6.0.8 |
 | CARD database | 4.0.1 |
