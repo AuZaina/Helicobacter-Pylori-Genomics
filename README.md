@@ -147,7 +147,7 @@ The genome sizes ranged from 1555420.0 bp to 1725063.0 bp and the average GC con
 
 ### Pan-genomes
 
-Panaroo pan-genome analysis of 63 H. pylori strains identified a total of 2,847 genes. Of these, 1,192 were core genes (present in ≥99% of strains), 67 soft-core (95–99%), 388 shell (15-95%), and 1,200 cloud genes (<15%). H. pylori has an open pan-genome, Despite sharing a highly conserved core genome, strains exhibit considerable diversity driven by constant genetic recombination and horizontal gene transfer.
+Panaroo pan-genome analysis of 63 H. pylori strains identified a total of 2,847 genes. Of these, 1,192 were core genes (present in ≥99% of strains), 67 soft-core (95–99%), 388 shell (15-95%), and 1,200 cloud genes (<15%). H. pylori has an open pan-genome, despite sharing a highly conserved core genome strains exhibit considerable diversity driven by constant genetic recombination and horizontal gene transfer.
 
 ### Phylogenetic reconstruction 
 
@@ -161,7 +161,7 @@ The tree revealed two primary lineages: one comprising South African and Congole
 ![AMR Heatmap](Visualization/figures/AMR.png)
 *Distribution of AMR genes and point mutations across strains mapped onto phylogeny.*
 
-AMR analysis identified resistance-associated mutations across six loci. Mutations in gyrA confer fluoroquinolone resistance, rdxA and frxA are associated with metronidazole resistance, pbp1a and pbp3 with beta-lactam resistance, and 23S rRNA mutations with clarithromycin resistance. AMR gene and mutations were manually curated keeping only variants with confirmed associations with antibiotic resistance were retained for analysis
+AMR analysis identified resistance-associated mutations across six loci. Mutations in gyrA confer fluoroquinolone resistance, rdxA and frxA are associated with metronidazole resistance, pbp1a and pbp3 with beta-lactam resistance, and 23S rRNA mutations with clarithromycin resistance. AMR gene and mutations were manually curated keeping only variants with confirmed associations with antibiotic resistance.
 
 ### Virulence
 
