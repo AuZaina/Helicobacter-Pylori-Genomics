@@ -30,7 +30,7 @@ Strains were renamed according to [rename.txt](Genome/rename.txt):
 Quality check was performed using SeqKit:
 
 ```bash
-seqkit stat -a -T *.fna > seq_qc_genomes.txt
+seqkit stats -a -T *.fna > seq_qc_genomes.txt
 ```
 
 ## 2. Genome Annotation
@@ -38,7 +38,7 @@ seqkit stat -a -T *.fna > seq_qc_genomes.txt
 All genomes were annotated using Prokka:
 
 ```bash
-for fna in Genome/*.fna; do
+for fna in *.fna; do
     sample=$(basename "$fna" .fna)
     prokka \
         --outdir Annotation/"$sample" \
@@ -60,7 +60,7 @@ Results: [Annotation/](Annotation/)
 Pangenome was constructed using Panaroo in strict mode:
 
 ```bash
-panaroo -i Annotation/*/*.gff \
+panaroo -i *.gff \
     -o Pangenome/ \
     --clean-mode strict \
     -a core \
@@ -73,7 +73,7 @@ Results: [Pangenome/](Pangenome/)
 
 ## 4. Phylogenetic Analysis
 
-Maximum likelihood phylogenetic tree was constructed using IQ-TREE2:
+Maximum likelihood phylogenetic tree was constructed using IQ-TREE:
 
 ```bash
 iqtree -s Pangenome/core_gene_alignment_filtered.aln \
@@ -92,7 +92,7 @@ Tree was rooted using *H. acinonychis* as outgroup. Results: [Phylogeny/](Phylog
 Point mutations and AMR genes detected using AMRFinderPlus:
 
 ```bash
-for f in faa/*.faa; do
+for f in *.faa; do
   strain=$(basename "$f" .faa)
   amrfinder \
     -n fna/${strain}.fna \
@@ -141,16 +141,36 @@ Phylogenetic tree and heatmaps were generated in R using ggtree and gheatmap.
 
 R scripts: [Visualization/scripts/](Visualization/scripts/)
 
-### Figures
+## Results
+
+The genome sizes ranged from 1555420.0 bp to 1725063.0 bp and the average GC content was 38.9%
+
+### Pan-genomes
+
+Panaroo pan-genome analysis of 63 H. pylori strains identified a total of 2,847 genes. Of these, 1,192 were core genes (present in ≥99% of strains), 67 soft-core (95–99%), 388 shell (15-95%), and 1,200 cloud genes (<15%). H. pylori has an open pan-genome, Despite sharing a highly conserved core genome, strains exhibit considerable diversity driven by constant genetic recombination and horizontal gene transfer.
+
+### Phylogenetic reconstruction 
 
 ![Phylogenetic Tree](Visualization/figures/iqtree.png)
-*Maximum likelihood phylogenetic tree of H. pylori strains rooted with H. acinonychis, tip labels colored by country.*
+*Maximum likelihood phylogenetic tree of H. pylori strains rooted with H. acinonychis, tip labels colored by country. *
+
+The tree revealed two primary lineages: one comprising South African and Congolese strains, and a second encompassing European, Algerian, and East Asian strains. East Asian strains (JPN, SKR, CHN) formed a tight, well supported clade with notably short branch lengths. South African strains showed comparatively longer branch lengths, which could be due to greater sequence diversity within these strains. European strains clustered together in a distinct clade, with Algerian strains grouping within this clade rather than with African strains, possibly reflecting historical gene flow across the Mediterranean. SPN_007 clustered within the African lineage and CNG_001 clustered with European strains, could be due to potential Africa-Europe admixture, consistent with patterns reported in H. pylori population studies.
+
+### Antimicrobial Resistance
 
 ![AMR Heatmap](Visualization/figures/AMR.png)
 *Distribution of AMR genes and point mutations across strains mapped onto phylogeny.*
 
+AMR analysis identified resistance-associated mutations across six loci. Mutations in gyrA confer fluoroquinolone resistance, rdxA and frxA are associated with metronidazole resistance, pbp1a and pbp3 with beta-lactam resistance, and 23S rRNA mutations with clarithromycin resistance. AMR gene and mutations were manually curated keeping only variants with confirmed associations with antibiotic resistance were retained for analysis
+
+### Virulence
+
+Virulence factor analysis was performed across six loci: CagPAI, CagA, VacA, BabA, SabA, and OipA. CagA is the primary virulence effector of H. pylori, injected directly into gastric epithelial cells via the Type IV Secretion System (T4SS) encoded by the cag pathogenicity island (CagPAI), where it disrupts host cell signalling and promotes inflammation. VacA is a secreted cytotoxin that induces vacuolation and apoptosis in host cells. BabA mediates adherence to gastric epithelial cells by binding blood group antigens. SabA and OipA are outer membrane proteins involved in adhesion and inflammatory signalling respectively; notably, both are phase-variable genes whose expression can be switched on or off independent of gene presence, meaning detection does not necessarily indicate activity. Functional CagPAI was defined by the presence of all essential cagPAI genes, while strains lacking one or more core components, including virB10/cagY which encodes a critical outer membrane component of the T4SS required for CagA translocation, were classified as harbouring partial or disrupted cagPAI. East Asian and African strains showed comparatively higher overall virulence factor prevalence than European strains, consistent with patterns reported in the literature. VacA showed low detection across strains, likely reflecting allelic diversity in the vacA gene, particularly mosaic s and m region alleles, that may fall below the 80% coverage threshold applied. A lower threshold was not used to avoid false positive detections. Wet lab validation would be required to confirm the true virulence potential of these strains.
+
 ![Virulence Heatmap](Visualization/figures/Virulence.png)
 *Distribution of virulence factors across strains mapped onto phylogeny.*
+
+
 
 ## Tools & Versions
 | Tool | Version |
