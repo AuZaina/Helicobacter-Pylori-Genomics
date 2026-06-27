@@ -152,7 +152,7 @@ Panaroo pan-genome analysis of 63 H. pylori strains identified a total of 2,847 
 ### Phylogenetic reconstruction 
 
 ![Phylogenetic Tree](Visualization/figures/iqtree.png)
-*Maximum likelihood phylogenetic tree of H. pylori strains rooted with H. acinonychis, tip labels colored by country. *
+*Maximum likelihood phylogenetic tree of H. pylori strains rooted with H. acinonychis, tip labels colored by country.*
 
 The tree revealed two primary lineages: one comprising South African and Congolese strains, and a second encompassing European, Algerian, and East Asian strains. East Asian strains (JPN, SKR, CHN) formed a tight, well supported clade with notably short branch lengths. South African strains showed comparatively longer branch lengths, which could be due to greater sequence diversity within these strains. European strains clustered together in a distinct clade, with Algerian strains grouping within this clade rather than with African strains, possibly reflecting historical gene flow across the Mediterranean. SPN_007 clustered within the African lineage and CNG_001 clustered with European strains, could be due to potential Africa-Europe admixture, consistent with patterns reported in H. pylori population studies.
 
