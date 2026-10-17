@@ -47,7 +47,6 @@ All genomes were annotated using Prokka:
         --gcode 11 \
         --cpus 4 \
         sample.fna
-done
 ```
 
 Results: [Annotation/](Annotation/)
@@ -97,7 +96,6 @@ Point mutations and AMR genes detected using AMRFinderPlus:
     --plus \
     --threads 4 \
     -o sample_amr.tsv
-done
 ```
 
 ### RGI/CARD
@@ -109,7 +107,6 @@ Resistant gene mutation identified using RGI with CARD database:
         --output_file result/sample_rgi \
         --local \
         --clean 
-done
 ```
 
 Results: [Amr/](Amr/)
@@ -120,7 +117,6 @@ Virulence factors detected using ABRicate with VFDB:
 
 ```bash
     abricate --db vfdb sample.fna > vfdb/sample_vfdb.tsv
-done
 ```
 
 Results: [Virulence/](Virulence/)
