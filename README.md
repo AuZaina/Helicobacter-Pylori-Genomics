@@ -38,18 +38,17 @@ seqkit stats -a -T *.fna > seq_qc_genomes.txt
 All genomes were annotated using Prokka:
 
 ```bash
-for fna in *.fna; do
-    sample=$(basename "$fna" .fna)
+for f in genome/*.fna; do
+    sample=$(basename "$f" .fna)
     prokka \
         --outdir Annotation/"$sample" \
         --prefix "$sample" \
-        --locustag "$sample" \
         --genus Helicobacter \
         --species pylori \
         --kingdom Bacteria \
         --gcode 11 \
         --cpus 4 \
-        "$fna"
+        "$f"
 done
 ```
 
@@ -60,8 +59,8 @@ Results: [Annotation/](Annotation/)
 Pangenome was constructed using Panaroo in strict mode:
 
 ```bash
-panaroo -i *.gff \
-    -o Pangenome/ \
+panaroo -i annotation/*/*.gff \
+    -o Pangenome \
     --clean-mode strict \
     -a core \
     --aligner mafft \
@@ -92,7 +91,7 @@ Tree was rooted using *H. acinonychis* as outgroup. Results: [Phylogeny/](Phylog
 Point mutations and AMR genes detected using AMRFinderPlus:
 
 ```bash
-for f in *.faa; do
+for f in annotation/*/*.faa; do
   strain=$(basename "$f" .faa)
   amrfinder \
     -n fna/${strain}.fna \
@@ -109,14 +108,13 @@ done
 Resistant gene mutation identified using RGI with CARD database:
 
 ```bash
-for f in *.fna; do
+for f in annotation/*/*.fna; do
     name=$(basename $f .fna)
     rgi main \
         --input_sequence $f \
         --output_file result/${name}_rgi \
         --local \
-        --clean \
-        -a DIAMOND
+        --clean 
 done
 ```
 
@@ -127,7 +125,7 @@ Results: [Amr/](Amr/)
 Virulence factors detected using ABRicate with VFDB:
 
 ```bash
-for f in *.fna; do
+for f in annotation/*/*.fna; do
     sample=$(basename "$f" .fna)
     abricate --db vfdb "$f" > vfdb/${sample}_vfdb.tsv
 done
