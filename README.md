@@ -8,17 +8,17 @@ This project performs comparative genomics analysis of 63 *Helicobacter pylori* 
 - East Asia: China, Japan, South Korea
 - Europe: Germany, Italy, Spain
 
-**Pipeline summary:**
+## Data Source
+Genomes were downloaded from NCBI RefSeq/GenBank (accessions and sample IDs in [metadata.tsv](Genome/metadata.tsv)).
+Majority of genomes are from the *H. pylori* Genome Project (HpGP) (Thorell K, Muñoz-Ramírez ZY, Wang D, et al. The *Helicobacter pylori* Genome Project: insights into *H. pylori* population structure from analysis of a worldwide collection of complete genomes. *Nat Commun*. 2023;14(1):8184. doi:10.1038/s41467-023-43562-y); the rest are from independent studies.
+
+## Pipeline summary:
 - Genome annotation: Prokka
 - Pangenome analysis: Panaroo
 - Phylogenetic reconstruction: IQ-TREE
 - AMR detection: AMRFinderPlus + RGI/CARD
 - Virulence factor detection: ABRicate/VFDB
 - Visualization: R (ggtree, gheatmap)
-
-## Data Source
-Genomes were downloaded from NCBI RefSeq/GenBank (accessions and sample IDs in [metadata.tsv](Genome/metadata.tsv)).
-Majority of genomes are from the *H. pylori* Genome Project (HpGP) (Thorell K, Muñoz-Ramírez ZY, Wang D, et al. The *Helicobacter pylori* Genome Project: insights into *H. pylori* population structure from analysis of a worldwide collection of complete genomes. *Nat Commun*. 2023;14(1):8184. doi:10.1038/s41467-023-43562-y); the rest are from independent studies.
 
 
 ## 1. Genome Download & Quality Control
