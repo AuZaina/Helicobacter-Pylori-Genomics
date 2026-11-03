@@ -1,4 +1,4 @@
-# Helicobacter pylori Comparative Genomics
+# Helicobacter pylori Comparative Genomics (Self-directed)
 
  ## Overview
 This project performs comparative genomics analysis of 63 *Helicobacter pylori* strains - 7 strains per country across 9 countries representing 3 geographic regions (Africa, East Asia, and Europe) - with *H. acinonychis* as an outgroup.
